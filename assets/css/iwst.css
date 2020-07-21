@@ -1,5 +1,7 @@
 /* stylelint-disable selector-list-comma-newline-after */
-
+a {
+  text-decoration: none !important;
+}
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
@@ -139,8 +141,99 @@ h1, h2, h3, h4, h5, h6 {
   height: 350px;
 }
 
+.nav-custom-pills {
+  overflow-x: auto;
+  white-space: normal;
+}
+
+/* Horizontal line */
+.collapsible-link::before {
+  content: '';
+  width: 14px;
+  height: 2px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 1rem;
+  display: block;
+  transition: all 0.3s;
+}
+
+.card-header a[aria-expanded="true"]{
+  color: #28a745 !important;
+}
+
+.card-header a[aria-expanded="false"]{
+  color: #6c757d !important;
+}
+
+/* Vertical line */
+.collapsible-link::after {
+  content: '';
+  width: 2px;
+  height: 14px;
+  background: #333;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: calc(1rem + 6px);
+  display: block;
+  transition: all 0.3s;
+}
+
+.collapsible-link[aria-expanded='true']::after {
+  transform: rotate(90deg) translateX(-1px);
+}
+
+.collapsible-link[aria-expanded='true']::before {
+  transform: rotate(180deg);
+}
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+.nav-contact-pills {
+  display: flex !important;
+  border: none;
+}
+.nav-contact-link {
+  color: #6c757d;
+}
+.nav-contact-link:hover {
+  color: #6c757d;
+  border: none;
+}
+
+.nav-contact-link.active {
+  background-color: #28a745 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+   border: none;
+}
+
+
 @media screen and (max-width: 768px) {
   .slider-img-height {
     height: 200px;
+  }
+  .blog-header-logo {
+    font-size: 15px;
+  }
+  .logo-caption {
+    font-size: 10px;
+  }
+  .navbar-toggler {
+    border-color: #28a745 !important;
+  }
+
+  .nav-custom-pills a {
+    display:table-cell !important;
+  }
+  .brochure-heading {
+    font-size: 20px;
   }
 }
