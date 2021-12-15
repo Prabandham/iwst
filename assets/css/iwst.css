@@ -275,15 +275,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .bg-custom-btn {
-  background-color: #F4F5F5;
-  border: 1px solid #F4F5F5;
-  color: #000;
+  background-color: #0D6049;
+  border: 1px solid #0D6049;
+  color: #fff;
 }
 
 .bg-custom-btn:hover, .bg-custom-btn:focus, .bg-custom-btn:active, .bg-custom-btn:visited {
-  background-color: #F4F5F5;
-  border: 1px solid #F4F5F5;
-  color: #000;
+  background-color: #0D6049;
+  border: 1px solid #0D6049;
+  color: #fff;
 }
 
 .border-success {
@@ -291,8 +291,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card {
-  background: #0D6049;
-  color: #F4F5F5;
+  border-color: #0D6049;
+  color: #000;
 }
 
 .jumbotron {
