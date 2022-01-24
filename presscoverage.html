@@ -13,7 +13,9 @@
         <title>IWST</title>
 
         <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <style>
             .bd-placeholder-img {
@@ -37,47 +39,111 @@
 
     <body id="main-layout">
         <div class="container-fluid p-0">
-            <header class="blog-header py-1">
+            <header class="blog-header py-2">
                 <div class="row flex-nowrap justify-content-between align-items-center">
-                    <div class="col-3 pt-1">
-                        <img src="./assets/images/emblem.png" alt="Indian Emblem" class="img-fluid logo-height pl-5" />
+                    <div class="col-8 pt-1">
+                        <img src="./assets/images/emblem.png" alt="Indian Emblem"
+                            class="img-fluid logo-height pl-3 float-left" />
+                        <div class="pt-3">
+                            <a class="blog-header-logo bg-text-success pl-3" href="index.html">Institute of Wood Science
+                                & Technology,
+                                Bangalore
+                                <br />
+                                <span
+                                    class="logo-caption font-weight-bold bg-text-success-small pl-3 float-left pt-1">Indian
+                                    Council of
+                                    Forestry Research &
+                                    Education Bangalore
+                                    (India)</span></a>
+                        </div>
                     </div>
-                    <div class="col-6 text-center">
-                        <a class="blog-header-logo bg-text-success" href="#">Institute of Wood Science & Technology</a>
-                        <br />
-                        <small class="logo-caption font-weight-bold bg-text-success-small">Indian Council of Forestry
-                            Research &
-                            Education Bangalore
-                            (India)</small>
+                    <div class="col-2 d-flex justify-content-end align-items-center">
+                        <img src="./assets/images/mahotsav.png" alt="IWST Logo" class="img-fluid logo-height" />
+                        <img src="./assets/images/icfre_logo.png" alt="IWST Logo" class="img-fluid logo-height" />
                     </div>
-                    <div class="col-3 d-flex justify-content-end align-items-center">
-                        <img src="./assets/images/icfre_logo.png" alt="IWST Logo" class="img-fluid logo-height pr-5" />
+                    <div class="col-2 d-flex justify-content-end align-items-center">
+                        <div id="google_translate_element"></div>
                     </div>
                 </div>
             </header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="d-flex justify-content-between align-items-center breaking-news bg-white">
+                            <div
+                                class="d-flex flex-row flex-grow-1 flex-fill justify-content-center bg-news-scroll py-2 text-white px-1 news">
+                                <span class="d-flex align-items-center">&nbsp;Latest Announcements</span>
+                            </div>
+                            <marquee class="news-scroll" behavior="scroll" direction="left" onmouseover="this.stop();"
+                                onmouseout="this.start();">
+                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSc4r-tpzSA9pCoSIQ6Hnox6nrhX3qFExGW_WcCRxOkVzGbfHQ/closedform"
+                                    target="_blank">Institute of Wood Science and Technology will be organizing Online
+                                    Training Programme
+                                    in Tamil on Sandalwood Farming and Management of Its Health 20th September
+                                    2021.Training is free and
+                                    there is no Registration Fee. </a>
+                                <span class="dot"></span>
+                                <a href="https://youtu.be/nfzM_0_WECc" target="_blank">Youtube live on 20th September
+                                    2021 at 10.00AM
+                                </a>
+                                <span class="dot"></span>
+                            </marquee>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <nav class="navbar navbar-expand-lg navbar-light bg-custom">
                 <button class="navbar-toggler btn-block" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
-                    <span class="text-white font-weight-bold">Menu</span>
+                    <span class="text-dark font-weight-bold">Menu</span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav w-100 nav-justified custom-header-nav">
-                        <li class="nav-item ">
+                        <li class="nav-item font-weight-bold">
                             <a class="nav-link bg-custom-text" href="index.html">Home <span
                                     class="sr-only">(current)</span></a>
                         </li>
+
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Research
                             </a>
-                            <div class="dropdown-menu nav-dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="researchdivisions.html">Research Divisions</a>
-                                <a class="dropdown-item" href="researchcenters.html">Research Centers</a>
-                            </div>
+                            <ul class="dropdown-menu nav-dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <li class="dropdown dropright">
+                                    <a class="dropdown-item dropdown-toggle" href="#" id="multilevelDropdownMenu1"
+                                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research
+                                        Divisions</a>
+                                    <ul class="dropdown-menu nav-dropdown-menu"
+                                        aria-labelledby="multilevelDropdownMenu1">
+                                        <li><a class="dropdown-item" href="woodprocessingandusesdivision.html">Wood
+                                                Properties and Uses
+                                                Division</a></li>
+                                        <li><a class="dropdown-item" href="woodprocessdivision.html">Wood Processing
+                                                Division</a></li>
+                                        <li><a class="dropdown-item" href="forestprotectiondivision.html">Forest
+                                                Protection Division</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="silvicultureforestdivision.html">Silviculture
+                                                and Forest
+                                                Management Division</a></li>
+                                        <li><a class="dropdown-item" href="extensiondivision.html">Extension
+                                                Division</a></li>
+                                        <li><a class="dropdown-item" href="facilitiesandservicedivision.html">Facilities
+                                                and Services
+                                                Division</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="researchcenters.html">Research Centers</a></li>
+                                <li><a class="dropdown-item" href="gcr.html">Group Coordinator Research</a></li>
+                            </ul>
                         </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -86,13 +152,35 @@
                             <div class="dropdown-menu nav-dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="trainingprogramme.html">Training Programme</a>
                                 <a class="dropdown-item" href="coursecalendar.html">Course Calendar</a>
-                                <a class="dropdown-item" href="onlineappform.html">Online Application Form</a>
-                                <a class="dropdown-item" href="phedprogramme.html">Phed Programme</a>
+                                <a class="dropdown-item" href="phedprogramme.html">Phd Programme</a>
                                 <a class="dropdown-item" href="diplomacourse.html">Diploma Course</a>
                                 <a class="dropdown-item" href="dissertation.html">Dissertation Work</a>
                                 <a class="dropdown-item" href="labtraining.html">Laboratory Training</a>
+                                <a class="dropdown-item" href="certificationcourse.html">Certification Course</a>
+                                <a class="dropdown-item" href="internship.html">Internship</a>
+                                <a class="dropdown-item" href="onlineappform.html">Online Application Form</a>
+                                <a class="dropdown-item" href="https://iwst.icfre.gov.in/awwtc/awwtc.htm"
+                                    target="_blank">AWTC</a>
                             </div>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown"
+                                role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Publications
+                            </a>
+                            <div class="dropdown-menu nav-dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="magazine.html">Magazine</a>
+                                <a class="dropdown-item" href="newsletter.html">Newsletters</a>
+                                <a class="dropdown-item" href="booksproceedings.html">Books and Proceedings</a>
+                                <a class="dropdown-item" href="bulletin.html">Bulletin</a>
+                                <a class="dropdown-item" href="brochures.html">Brochures</a>
+                                <a class="dropdown-item" href="presscoverage.html">Press Coverage</a>
+                                <a class="dropdown-item" href="mou.html">Memorandum of Understanding (MOU)</a>
+                                <a class="dropdown-item" href="databases.html">Database</a>
+                            </div>
+                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -105,21 +193,7 @@
                                 <a class="dropdown-item" href="conference.html">Conference & Workshop</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown font-weight-bold">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Publications
-                            </a>
-                            <div class="dropdown-menu nav-dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="magazine.html">Magazine</a>
-                                <a class="dropdown-item" href="newsletter.html">Newsletters</a>
-                                <a class="dropdown-item" href="booksproceedings.html">Books and Proceedings</a>
-                                <a class="dropdown-item" href="bulletin.html">Bulletin</a>
-                                <a class="dropdown-item" href="brochures.html">Brochures</a>
-                                <a class="dropdown-item" href="presscoverage.html">Press Coverage</a>
-                                <a class="dropdown-item" href="mou.html">Memorandum of Understanding (MOU)</a>
-                            </div>
-                        </li>
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -129,23 +203,25 @@
                                 <a class="dropdown-item" href="woodspecimentesting.html">Wood Specimen Testing</a>
                                 <a class="dropdown-item" href="seedsaplingsale.html">Seed and Sapling Sale</a>
                                 <a class="dropdown-item" href="guesthousecharges.html">Guest House Charges</a>
-                                <a class="dropdown-item" href="communityhall.html">Community & Conference Hall Charges</a>
+                                <a class="dropdown-item" href="communityhall.html">Community & Conference Hall
+                                    Charges</a>
                                 <a class="dropdown-item" href="library.html">Library</a>
                                 <a class="dropdown-item" href="laboratory.html">Laboratory</a>
+                                <a class="dropdown-item" href="technologypackage.html">Technology Packages</a>
+                                <a class="dropdown-item" href="consultindustries.html">Consultation for Industries</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Important
+                                Our Corner
                             </a>
                             <div class="dropdown-menu nav-dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="databases.html">Database</a>
-                                <a class="dropdown-item" href="technologypackage.html">Technology Packages</a>
-                                <a class="dropdown-item" href="consultindustries.html">Consultation for Industries</a>
-                                <a class="dropdown-item" href="recentevents.html">Recent Events</a>
-                                <a class="dropdown-item" href="rti.html">RTI</a>
+                                <a class="dropdown-item" href="aboutus.html">About Us</a>
+                                <a class="dropdown-item" href="photogallery.html">Organization Structure</a>
+                                <a class="dropdown-item" href="photogallery.html">Team</a>
                                 <a class="dropdown-item" href="photogallery.html">Photo Gallery</a>
+                                <a class="dropdown-item" href="photogallery.html">Video Gallery</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -161,11 +237,11 @@
                         </li>
                     </ul>
                 </div>
-            </nav> 
+            </nav>
         </div>
 
 
-        <main role="main" class="container-fluid">
+        <main role="main" class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -183,10 +259,11 @@
                             <br /><small>---</small>
                         </div>
                         <div class="card-body">
-                            Wood Science Institute ties up with Schools to spread awareness on Conservation		
+                            Wood Science Institute ties up with Schools to spread awareness on Conservation
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Newspaper clippings_12Feb2019.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Newspaper clippings_12Feb2019.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -197,65 +274,71 @@
                             <br /><small>Deccan Herald</small>
                         </div>
                         <div class="card-body">
-                            Showcasing nature's gift	
+                            Showcasing nature's gift
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan herald_29Nove2017.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan herald_29Nove2017.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  11th October 2017
+                            <i class="far fa-calendar-alt"></i> 11th October 2017
                             <br /><small>The Times of India</small>
                         </div>
                         <div class="card-body">
-                            IoT-based tech helps keep watching on trees, sends alert	
+                            IoT-based tech helps keep watching on trees, sends alert
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Timesof India_12Oct2017.PDF" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Timesof India_12Oct2017.PDF"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
             <div class="row mb-3">
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  3rd February 2017,
+                            <i class="far fa-calendar-alt"></i> 3rd February 2017,
                             <br /><small>The Hindu, Bangalore Mirror, vijaya kartantaka, vijayavani</small>
                         </div>
                         <div class="card-body">
-                            National Conference on TREE IMPROVEMENT RESEARCH IN INDIA: CURRENT TRENDS AND FUTURE PROSPECTS (2nd & 3rd February, 2017) News	
+                            National Conference on TREE IMPROVEMENT RESEARCH IN INDIA: CURRENT TRENDS AND FUTURE
+                            PROSPECTS (2nd & 3rd February, 2017) News
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/TIG Conference_7Feb2017.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/TIG Conference_7Feb2017.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  25th September 2016
+                            <i class="far fa-calendar-alt"></i> 25th September 2016
                             <br /><small>The Hindu, Dinamalar, vijaya kartantaka, Prajavani</small>
                         </div>
                         <div class="card-body">
-                            World Bamboo day  2016 Celebration news
+                            World Bamboo day 2016 Celebration news
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Bamboo2016_27Sep2016.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Bamboo2016_27Sep2016.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>   21st July 2016
+                            <i class="far fa-calendar-alt"></i> 21st July 2016
                             <br /><small>The new Indian Express</small>
                         </div>
                         <div class="card-body">
-                            Persistence of two forest officers saw the setting up of Institute of Wood Science and Technology
+                            Persistence of two forest officers saw the setting up of Institute of Wood Science and
+                            Technology
                         </div>
                         <!-- <div class="card-footer text-center">
                             <a target="_blank" href="./assets/docs/presscoverage/Bamboo2016_27Sep2016.pdf" class="btn bg-custom-btn text-white">View Details</a>
@@ -268,121 +351,129 @@
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  26th July 2016
+                            <i class="far fa-calendar-alt"></i> 26th July 2016
                             <br /><small>Prajavani Kannada</small>
                         </div>
                         <div class="card-body">
                             Encroachment : Story of Killing Trees
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Prajavani_26July2016.PDF" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Prajavani_26July2016.PDF"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  26th July 2016
+                            <i class="far fa-calendar-alt"></i> 26th July 2016
                             <br /><small>Deccan Herald</small>
                         </div>
                         <div class="card-body">
                             Former Chief of Women's panel booked for girdling 430 trees
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Herald_26July2016.PDF" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Herald_26July2016.PDF"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  16th July 2016
+                            <i class="far fa-calendar-alt"></i> 16th July 2016
                             <br /><small>Bangalore Mirror</small>
                         </div>
                         <div class="card-body">
                             City Scientists Eye Deadly Weed to Put India in the Lead
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Bangaloremirror_19July2016.PDF" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Bangaloremirror_19July2016.PDF"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  20th October 2015
+                            <i class="far fa-calendar-alt"></i> 20th October 2015
                             <br /><small>Dinakaran</small>
                         </div>
                         <div class="card-body">
-                            300 Forest Reserve forest in whole county: Minister	
+                            300 Forest Reserve forest in whole county: Minister
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Dhinakaran20October2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Dhinakaran20October2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  20th October 2015
+                            <i class="far fa-calendar-alt"></i> 20th October 2015
                             <br /><small>Kannadaprabha</small>
                         </div>
                         <div class="card-body">
                             Kasturirangan Committee's report may discuss on December 2015: Minister
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/kannada_prabha20October2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/kannada_prabha20October2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  20th October 2015
+                            <i class="far fa-calendar-alt"></i> 20th October 2015
                             <br /><small>The Hindu</small>
                         </div>
                         <div class="card-body">
                             Efforts on to clean frothing lakes: Minister
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/The Hindu20October2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/The Hindu20October2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  20th October 2015
+                            <i class="far fa-calendar-alt"></i> 20th October 2015
                             <br /><small>Deccan Herald</small>
                         </div>
                         <div class="card-body">
-                            Recycled water must for new apartments near lakes: Minister	
+                            Recycled water must for new apartments near lakes: Minister
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan_Herald_20October2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan_Herald_20October2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  5th June 2015
+                            <i class="far fa-calendar-alt"></i> 5th June 2015
                             <br /><small>The new Indian Express</small>
                         </div>
                         <div class="card-body">
                             Mission Green Visakha, World Environmental day, Catamarans that last 18 Years.
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/NewIndianexpress_5June2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/NewIndianexpress_5June2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -390,30 +481,32 @@
                             <br /><small>Down To Earth</small>
                         </div>
                         <div class="card-body">
-                            Return of scented wood	
+                            Return of scented wood
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/dwontoeartth_09July2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/dwontoeartth_09July2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  31st January 2015
+                            <i class="far fa-calendar-alt"></i> 31st January 2015
                             <br /><small>Bangalore Mirror</small>
                         </div>
                         <div class="card-body">
-                            Wood for through on better made in India furniture	
+                            Wood for through on better made in India furniture
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/bangaloremirror_30Jan2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/bangaloremirror_30Jan2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -424,10 +517,11 @@
                             Kannada News
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/vijaykarnataka_Jan2015.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/vijaykarnataka_Jan2015.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -435,30 +529,33 @@
                             <br /><small>Daily Thanthi</small>
                         </div>
                         <div class="card-body">
-                            Sri. H.N. Ananth Kumar, Hon’ble Minister for Chemicals& Fertilizer’s converse in Wood is Good Conference	
+                            Sri. H.N. Ananth Kumar, Hon’ble Minister for Chemicals& Fertilizer’s converse in Wood is
+                            Good Conference
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Dailythanthi_25Nove2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Dailythanthi_25Nove2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  10th November 2014
+                            <i class="far fa-calendar-alt"></i> 10th November 2014
                             <br /><small>Bangalore Mirror</small>
                         </div>
                         <div class="card-body">
-                            Cut Trees, Conserve better: That’s the New approach	
+                            Cut Trees, Conserve better: That’s the New approach
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Bangaloremirror_25Novem2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Bangaloremirror_25Novem2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -469,25 +566,27 @@
                             Kannada News
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Kannadaprabha 17 October 2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Kannadaprabha 17 October 2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 7th October 2014
                             <br /><small>Deccan Chronicle</small>
                         </div>
-                        <div class="card-body">                            	
+                        <div class="card-body">
                             Pest hits port's biodiversity
                             Marine organism from the central America destroys native habitat
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Chronicle _9october2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Chronicle _9october2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -498,13 +597,14 @@
                             <br /><small>Deccan Herald</small>
                         </div>
                         <div class="card-body">
-                            The Woods are lovely, dark and deep	
+                            The Woods are lovely, dark and deep
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan herald_25August2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan herald_25August2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -516,24 +616,27 @@
                             State Sees Dip In Sandalwood Growth Annually
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/the times of india 13Aug2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/the times of india 13Aug2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 22nd July 2014
                             <br /><small>Deccan Chronicle</small>
                         </div>
-                        <div class="card-body">                            	
-                            No measures for conservation and check on over usage led to its extinction Catamaran Timber vanishes from forests
+                        <div class="card-body">
+                            No measures for conservation and check on over usage led to its extinction Catamaran Timber
+                            vanishes from forests
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Chronicle _24July2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccan Chronicle _24July2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -544,13 +647,14 @@
                             <br /><small>The Hindu, BusinessLine</small>
                         </div>
                         <div class="card-body">
-                            Scents of Sandalwood, Oil no more fragrant	
+                            Scents of Sandalwood, Oil no more fragrant
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Business line 4 March2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Business line 4 March2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -558,27 +662,29 @@
                             <br /><small>The Times of India</small>
                         </div>
                         <div class="card-body">
-                            The woman who rejuvenated sandalwood trees in S. India	
+                            The woman who rejuvenated sandalwood trees in S. India
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/The times of India 3 march2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/The times of India 3 march2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 27th February 2014
                             <br /><small>The Times of India</small>
                         </div>
-                        <div class="card-body">                            	
-                            Free up Sandalwood trade, experts tell Government	
+                        <div class="card-body">
+                            Free up Sandalwood trade, experts tell Government
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/the times of india 27Feb2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/the times of india 27Feb2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -592,10 +698,11 @@
                             State losing sandalwood trees to smuggling, handicrafts
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Deccanherald 27Feb2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Deccanherald 27Feb2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -606,24 +713,26 @@
                             Do not policies Western Ghats issue
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/The Hindu 27Feb 2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/The Hindu 27Feb 2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 27th February 2014
                             <br /><small>Dinakaran</small>
                         </div>
-                        <div class="card-body">                            	
-                            Sandalwood handicraft uses in Government office	
+                        <div class="card-body">
+                            Sandalwood handicraft uses in Government office
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Dinakaran 27 Feb2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Dinakaran 27 Feb2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -634,13 +743,14 @@
                             <br /><small>Kannadaprabha</small>
                         </div>
                         <div class="card-body">
-                            Sandalwood trees save in forest	
+                            Sandalwood trees save in forest
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Kannadaprabha 27 Feb2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Kannadaprabha 27 Feb2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -648,27 +758,30 @@
                             <br /><small>This Week Bangalore. com</small>
                         </div>
                         <div class="card-body">
-                            Proceedings of the first day of the “International Seminar on Sandalwood: Current Trends and Future Prospects” organized by Institute of Wood Science and Technology (IWST) (26th February 2014)
+                            Proceedings of the first day of the “International Seminar on Sandalwood: Current Trends and
+                            Future Prospects” organized by Institute of Wood Science and Technology (IWST) (26th
+                            February 2014)
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/thisweekbangalore_27Feb2014.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/thisweekbangalore_27Feb2014.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 26th February 2014
                             <br /><small>The Hindu</small>
                         </div>
-                        <div class="card-body">                            	
-                            Seminar on sandalwood today	
+                        <div class="card-body">
+                            Seminar on sandalwood today
                         </div>
                         <div class="card-footer text-center">
                             <a target="_blank" href="#" class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -679,41 +792,43 @@
                             <br /><small>Bangalore Mirror</small>
                         </div>
                         <div class="card-body">
-                            City Scientist turn plastic eco-friendly	
+                            City Scientist turn plastic eco-friendly
                         </div>
                         <div class="card-footer text-center">
                             <a target="_blank" href="#" class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
-                            <i class="far fa-calendar-alt"></i>  23 September 2013 
+                            <i class="far fa-calendar-alt"></i> 23 September 2013
                             <br /><small>The New Indian Express</small>
                         </div>
                         <div class="card-body">
-                            Marihal bamboo has potential	
+                            Marihal bamboo has potential
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Bambooday_25Sep2013.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Bambooday_25Sep2013.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 4 September 2013
                             <br /><small>The Hindu</small>
                         </div>
-                        <div class="card-body">                            	
+                        <div class="card-body">
                             Marketing a Milestone with new Technology
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Platinum news_5September2013.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Platinum news_5September2013.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-3">
@@ -724,13 +839,14 @@
                             <br /><small>---</small>
                         </div>
                         <div class="card-body">
-                            Chronicle Pharmabiz Research,	
+                            Chronicle Pharmabiz Research,
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/CFP_7August2013.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/CFP_7August2013.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -738,27 +854,32 @@
                             <br /><small>---</small>
                         </div>
                         <div class="card-body">
-                            Media coverage about one day workshop on "Perspectives on utilization of processed wood", held at Shore laboratory, Visakhapatnam (a research centre of IWST Bangalore).		
+                            Media coverage about one day workshop on "Perspectives on utilization of processed wood",
+                            held at Shore laboratory, Visakhapatnam (a research centre of IWST Bangalore).
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/WBD_Marine_26March2013.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/WBD_Marine_26March2013.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 09.10.2012
                             <br /><small>---</small>
                         </div>
-                        <div class="card-body">                            	
-                            Shri S.C. Joshi, Director, Institute of Wood Science & Technology Bangalore, meeting with concerned officials and people representatives in connection with information on “Influence of mining in Tumkur District of Karnataka.
+                        <div class="card-body">
+                            Shri S.C. Joshi, Director, Institute of Wood Science & Technology Bangalore, meeting with
+                            concerned officials and people representatives in connection with information on “Influence
+                            of mining in Tumkur District of Karnataka.
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/ENADU17Oct2012.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/ENADU17Oct2012.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
 
             <div class="row mb-5">
@@ -772,10 +893,11 @@
                             Press coverage on Waste Management programme at IWST on 5th October 2012
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/wastemgt16Oct2012.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/wastemgt16Oct2012.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>  
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
@@ -786,26 +908,29 @@
                             Inauguration Woods Museum and Interpretation Centre (4th January 2012).
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/woodmuseum Press Coverage .pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/woodmuseum Press Coverage .pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div> 
+                </div>
                 <div class="col-lg-12 mb-2 col-xs-12">
                     <div class="card h-100">
                         <div class="card-header text-left font-weight-bold">
                             <i class="far fa-calendar-alt"></i> 08.01.2012 and 09.01.2012
                             <br /><small>---</small>
                         </div>
-                        <div class="card-body">                            	
-                            Press Conference on Forestry in the Service of Nations…, ICFRE Technology, Chaired by Dr. V. K. Bahuguna (D.G., ICFRE).
+                        <div class="card-body">
+                            Press Conference on Forestry in the Service of Nations…, ICFRE Technology, Chaired by Dr. V.
+                            K. Bahuguna (D.G., ICFRE).
                         </div>
                         <div class="card-footer text-center">
-                            <a target="_blank" href="./assets/docs/presscoverage/Press Coverage  meet_7th Jan 12.pdf" class="btn bg-custom-btn text-white">View Details</a>
+                            <a target="_blank" href="./assets/docs/presscoverage/Press Coverage  meet_7th Jan 12.pdf"
+                                class="btn bg-custom-btn text-white">View Details</a>
                         </div>
                     </div>
-                </div>                
+                </div>
             </div>
-            
+
 
         </main>
         <div class="btn-group dropup dropup-contact">
@@ -836,25 +961,91 @@
         </div>
 
 
-        <footer class="blog-footer">
-            <!-- <p>
-        <a href="index.html">Home</a> | <a href="about.html">About Institute</a> |
-        <a href="divisions/index.html">Research Activities</a> | <a href="academics/indexaca.html">Academics</a> | <a
-          href="publications/publications.html">Publications</a> |
-        <a href="facilites/faclities.html">Facilities</a> | <a href="serconsultancy.html">Services &amp; Consultancy</a>
-        | <a href="divisions/extn/extnindex.html">Extension Activities</a> |
-        <a href="training/shortterm.html">Trainings </a>| <a href="database/index.html">Databases</a>| <a
-          href="tender/index.html">Tenders</a> <br>
-        <a target="_blank" href="awwtc/awwtc.htm">Advanced Woodworking Training Centre</a> |
-        <a href="jobs/jobs.html">Research Positions</a> | <a href="forthcomming/new.html">Forthcoming Events</a> | <a
-          href="photogallery/index.html">Photo Gallery</a> | <a href="links.html">Related Links</a> | <a
-          href="rti.html">RTI</a> |
-        <a href="FAQs.html">FAQs</a> | <a href="askus.html">Ask Us</a> |<a href="contact.html">Contact Us</a> |
-        <a target="_blank" href="hindi/index.html">Hindi Website</a></p> -->
+        <!-- Footer -->
+        <footer class="bg-white mt-auto">
+            <div class="container">
+                <div class="row py-3">
+                    <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                        <p class="font-italic text-muted">
+                        <h4 class="font-weight-bold">ABOUT IWST</h4>
+                        The Government of Mysore had set up a Forest Research Laboratory (FRL) at Bangalore in 1938. In
+                        the initial
+                        years, work was carried out mainly on properties and uses of different timber species.</p>
+                        <ul class="list-inline mt-4">
+                            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i
+                                        class="fab fa-twitter fa-2x" style="color: #0D6049;"></i></a>
+                            </li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i
+                                        class="fab fa-facebook-f fa-2x" style="color: #0D6049;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i
+                                        class="fab fa-instagram fa-2x" style="color: #0D6049;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i
+                                        class="fab fa-pinterest fa-2x" style="color: #0D6049;"></i></a></li>
+                            <li class="list-inline-item"><a href="#" target="_blank" title="youtube"><i
+                                        class="fab fa-youtube fa-2x" style="color: #0D6049;"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="aboutus.html" class="text-muted">About Institute</a></li>
+                            <li class="mb-2"><a href="researchdivisions.html" class="text-muted">Research Activities</a>
+                            </li>
+                            <li class="mb-2"><a href="#" class="text-muted">Academics</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Publications</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Research Facilities</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Services & Consultancy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-muted">Extension Activities</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Trainings</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Databases</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Tenders</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Advanced Wood Training Center</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Research Positions</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+                        <h6 class="text-uppercase font-weight-bold mb-4">Quick Links</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-2"><a href="#" class="text-muted">Forthcoming Events</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Photo Gallery</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Related Links</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">RTI</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">FAQ's</a></li>
+                            <li class="mb-2"><a href="#" class="text-muted">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- <div class="col-lg-4 col-md-6 mb-lg-0">
+              <h6 class="text-uppercase font-weight-bold mb-4">Newsletter</h6>
+              <p class="text-muted mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.
+              </p>
+              <div class="p-1 rounded border">
+                <div class="input-group">
+                  <input type="email" placeholder="Enter your email address" aria-describedby="button-addon1"
+                    class="form-control border-0 shadow-0">
+                  <div class="input-group-append">
+                    <button id="button-addon1" type="submit" class="btn btn-link"><i
+                        class="fa fa-paper-plane"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                </div>
+            </div>
 
-            <p>Hosted at ICFRE Data Centre ISO 27001 : 2005 Certified
-                &nbsp; | &nbsp;<a href="#">© Copyrights All Reserved 2009, IWST</a>.</p>
+            <!-- Copyrights -->
+            <div class="bg-light py-1">
+                <div class="container text-center">
+                    <p class="text-muted mb-0 py-2">© Copyrights All Reserved 2022, IWST</p>
+                </div>
+            </div>
         </footer>
+        <!-- End -->
+
     </body>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -867,7 +1058,23 @@
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/iwst.js"></script>
+
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'hi,en,kn',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript"
+        src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
     <script type="text/javascript">
         function sendEmail() {
             Email.send({

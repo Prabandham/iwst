@@ -4,6 +4,35 @@ $(document).ready(function () {
         $("#form1").toggle();
     });
 
+    let dropdowns = document.querySelectorAll('.dropdown-toggle')
+    dropdowns.forEach((dd) => {
+        dd.addEventListener('click', function (e) {
+            var el = this.nextElementSibling
+            el.style.display = el.style.display === 'block' ? 'none' : 'block'
+        })
+    })
+
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        dots: true,
+        center:true,
+        autoplay:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    
+
     $("form").submit(function (event) {
         var formData = {
             name1: $("#name1").val(),
@@ -26,9 +55,9 @@ $(document).ready(function () {
             );
         }).fail(function (data) {
             $("#formrequest").html(
-                '<div class="alert alert-danger alert-dismissible fade show">oops! something went wrong. <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button></div>'            
+                '<div class="alert alert-danger alert-dismissible fade show">oops! something went wrong. <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button></div>'
             );
-          });
+        });
 
         event.preventDefault();
     });

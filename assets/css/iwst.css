@@ -2,14 +2,37 @@
 a {
   text-decoration: none !important;
 }
+
+/* ul > li {
+  list-style: none;
+} */
+.list-style-none > li {
+  list-style: none;
+}
+
+
 .blog-header {
   line-height: 1;
   border-bottom: 1px solid #e5e5e5;
 }
 
+.goog-te-banner-frame.skiptranslate {
+  display: none !important;
+}
+body {
+  top: 0px !important;
+  min-height: 100vh;
+}
+
+body {
+  background: bisque;
+  font-family: 'Open Sans', sans-serif;
+}
+
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
-  font-size: 1.80rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.60rem;
+  font-weight: bold;
 }
 
 .logo-caption {
@@ -25,7 +48,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .display-4 {
@@ -105,21 +128,22 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  */
 .blog-footer {
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
+  margin-top: auto;
   padding: 0.5rem 0;
   color: #999;
   text-align: center;
   background-color: #f9f9f9;
-  border-top: .05rem solid #e5e5e5;
+  border-top: .05rem solid #e5e5e5;    
 }
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
 
 .logo-height {
-  height: 50px;
+  height: 80px;
 }
 
 .nav {
@@ -392,7 +416,16 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.nav-dropdown-menu > li > a {
+  color: #fff;
+}
+
 .nav-dropdown-menu > a:hover, .nav-dropdown-menu > a:focus, .nav-dropdown-menu > a:active, .nav-dropdown-menu > a:visited {
+  background: #0D6049;
+  color: #fff;
+}
+
+.nav-dropdown-menu > li > a:hover, .nav-dropdown-menu > li > a:focus, .nav-dropdown-menu > li > a:active, .nav-dropdown-menu > li > a:visited {
   background: #0D6049;
   color: #fff;
 }
@@ -401,7 +434,7 @@ h1, h2, h3, h4, h5, h6 {
   background: #0D6049 !important;
 }
 .custom-tab-nav-link {
-  background: #F4F5F5 !important;
+  background: #fff !important;
   color: #000;
   margin-bottom: 0.5rem;
 }
@@ -409,6 +442,15 @@ h1, h2, h3, h4, h5, h6 {
 .custom-table thead {
   background: #0D6049 !important;
   color: #fff;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background: #0D6049;
+  border: #0D6049;
+}
+
+.breadcrumb {
+  background: #fff;
 }
 
 /* Timeline holder */
@@ -459,4 +501,124 @@ li.timeline-item::before {
   height: 14px;
   z-index: 400;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* marquee scroll */
+.news {
+  width: 20%;
+}
+
+.news-scroll a {
+  text-decoration: none
+}
+
+.bg-news-scroll {
+  background: #e77615;
+}
+
+.dot {
+  height: 6px;
+  width: 6px;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 2px !important;
+  background-color: rgb(207, 23, 23);
+  border-radius: 50%;
+  display: inline-block
+}
+
+/* important links */
+.imp-links {
+  width: 100%; 
+  text-align: center; 
+  border-bottom: 2px solid #0D6049; 
+  line-height: 0.1em;
+  margin: 10px 0 20px; 
+} 
+
+.imp-links span { 
+   background: bisque;
+   padding:0 20px; 
+}
+
+.imp-link-btn-left {
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    left: 0;
+}
+
+.imp-link-btn-right {
+    position: absolute;
+    top: 45px;
+    z-index: 1;
+    right: 0;
+}
+
+/* sticky buttons */
+
+#ver-container {
+	display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+#btn-container {
+  height:auto;
+  align-self: center;
+}
+
+.btn-s {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+ /* // display: block; */
+  cursor: pointer;
+  color: white;
+  /* //transition: all .2s ease-in-out; */
+}
+
+.btn-s i {
+  font-size: 20px;
+  transition: all .25s ease-in-out;
+}
+
+.btn-s:hover i {
+  /* width: 60px;
+  font-size:25px; */
+  text-shadow: 0 0 6px #000;
+}
+
+#btn-1 {
+  background: #3b5998;
+}
+
+#btn-2 {
+  background: #55acee;
+}
+
+#btn-3 {
+  background: #dd4b39;
+}
+
+#btn-4 {
+  background: #833AB4;
+}
+
+#btn-5 {
+  background: #E60023;
+} 
+
+/* owl carousel */
+.owl-carousel .owl-item img {
+  height: 150px;
+}
+
+/* google maps */
+.mapouter {
+  height: 350px !important;
 }
